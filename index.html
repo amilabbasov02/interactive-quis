@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Çox bəyənilənək hədiyyə fikirləri</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div id="intro-image-container">
+      <img id="intro-image" src="./assets/img/Picture1.jpg" alt="Başlangıç Resmi" />
+    </div>
+
+    <div id="question-image" class="hidden">
+      <img id="image" src="" alt="Sorular Resmi" class="result-image" />
+    </div>
+
+    <div id="result-image-container" class="hidden">
+      <img id="result-image" src="" alt="Sonuç Resmi" class="result-image" />
+    </div>
+
+    <div class="quiz-container">
+      <div class="intro-screen" id="intro-screen">
+        <h1>Çox bəyənilənək hədiyyə fikirləri</h1>
+        <p>
+          Hədiyyə seçimi bəzən çətin ola bilir, xüsusilə də hədiyyənin həqiqətən alacağınız şəxsə uyğun olmasını istəyirsinizsə. Onun maraqlarını, hobbisini və həyat tərzini nəzərə almaq vacibdir. Bəs onun nəyi bəyənəcəyini necə bilmək olar? Biz sizə kiçik bir test təklif edirik ki, bu, sizə həmin şəxs üçün ideal hədiyyəni seçməkdə kömək edəcək.
+        </p>
+        <p>
+          Bu sadə suallara cavab verdikdən sonra yaxınınızın maraqlarını daha yaxşı anlayacaqsınız və bu, sizə ən uyğun hədiyyəni seçməkdə kömək edəcək. Biz xoş emosiyalar hiss etdirən bir neçə hədiyyə variantı təklif edirik. 
+        </p>
+        <p>
+          Dostlar, iş yoldaşları, sevdikləriniz və doğmalarınız üçün ideal Yeni il hədiyyəsini tapmağa hazırsınız? Başlayaq!
+        </p>
+        <button id="start-button">Başlayaq?!</button>
+      </div>
+
+      <div class="progress hidden" id="progress">
+        <div class="dots" id="dots"></div>
+      </div>
+      <div class="quiz-content hidden" id="quiz-content">
+        <h2 id="question"></h2>
+
+        <div class="options" id="options"></div>
+        <div class="question-number" id="question-number"></div>
+      </div>
+
+      <div id="result" class="hidden">
+        <h2 id="result-title"></h2>  <!-- Başlık -->
+        <p id="result-description"></p>  <!-- Küçük açıklama -->
+        <div id="recommended-products" class="hidden">
+ 
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+  </body>
+</html>

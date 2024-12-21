@@ -1,0 +1,94 @@
+{
+    "questions": [
+      {
+        "question": "Hədiyyə alacağınız insan hansı istirahət növünə üstünlük verir?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+          { "text": "Aktiv istirahəti sevir. Səyahət, gəzinti, idman fəaliyyətləri onun həyat tərzidir.", "type": "səyahətçi" },
+          { "text": "Dostları və ailəsi ilə vaxt keçirməyə üstünlük verir, hətta hər gün yaxınları ilə ünsiyyət saxlamağa çalışır.", "type": "pozitiv" },
+          { "text": "Evdə oturan insandır. Kitab oxumaq və seriala baxmaq onun üçün ideal istirahətdir.", "type": "serial" }
+        ]
+      },
+      {
+        "question": " Hədiyyə vermək istədiyiniz insan dizayn və moda sahəsindəki son trendləri izləyir?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+          { "text": "Onun üçün stil və xarici görünüş çox önəmlidir, həmişə trendləri izləyir.", "type": "Stil" },
+          { "text": "Stil və dizayn onun üçün ən vacib aspekt deyil, trendləri ara-sıra izləyir.", "type": "teknoloji" },
+          { "text": "Dizayn onun üçün böyük əhəmiyyət daşımır, əsas odur ki, əşya rahat olsun.", "type": "stil" }
+        ]
+      },
+      {
+        "question": "Hədiyyə hazırladığınız insan neçə müddətdən bir səyahət edir?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+          { "text": "Tez-tez edir, o, həmişə yoldadır", "type": "sevgi" },
+          { "text": "Bəzən, iş üçün və ya məzuniyyət zamanı.", "type": "profesyonel" },
+          { "text": "Nadir zamanlarda, əsasən, ehtiyac olduqda səyahət edir.", "type": "sosyal" }
+        ]
+      },
+      {
+        "question": "Hədiyyə seçdiyiniz insanı musiqisevər adlandırmaq olar? O, musiqi dinləməyi sevir?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+          { "text": "Şübhəsiz! O, daim musiqi dinləyir.", "type": "sevgi" },
+          { "text": "Ara-sıra musiqi dinləyir.", "type": "profesyonel" },
+          { "text": "Maraqlı kitab oxumağa üstünlük verir.", "type": "sosyal" }
+        ]
+      },
+      {
+        "question": "Hədiyyə seçdiyiniz insan sağlamlığına nə qədər diqqət edir?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+          { "text": "Bu, onun üçün çox vacibdir, özünə diqqət edir və idmanla məşğul olur.", "type": "sevgi" },
+          { "text": "Sağlamlığına diqqət yetirir, amma həmişə idman etmək üçün vaxt tapmır.", "type": "profesyonel" },
+          { "text": " Ən yaxşı idman - divandan qalxmadan baxacağın idmandır.", "type": "sosyal" }
+        ]
+      },
+      {
+        "question": "Hədiyyə seçdiyiniz insanı yaradıcı şəxs adlandırmaq olar?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+          { "text": "Bəli, o, sənətə maraq göstərir və sənətlə məşğul olur.", "type": "sevgi" },
+          { "text": "Yaradıcı fəaliyyətləri sevir, amma buna vaxt tapa bilmir.", "type": "profesyonel" },
+          { "text": "Pizza yemək və mağazaları gəzməklə “incəsənəti” öyrənir.", "type": "sosyal" }
+        ]
+      },
+      {
+        "question": "Sizin fikrinizcə, hədiyyə seçdiyiniz insanı daha çox hansı hədiyyə sevindirər?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+          { "text": "Texnologiya ilə bağlı cihazlar və qurğular", "type": "sevgi" },
+          { "text": "Ev üçün faydalı və praktik hədiyyələr", "type": "profesyonel" },
+          { "text": "Əhval-ruhiyyəni yüksəldən qeyri-adi və ya yaradıcı bir şey", "type": "sosyal" }
+        ]
+      },
+      {
+        "question": "Hədiyyə seçdiyiniz insan fotoşəkil və video çəkməyi sevir?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+          { "text": "Çəkir, montaj edir, paylaşır və yüzlərlə bəyənmə toplayır.", "type": "sevgi" },
+          { "text": "Yalnız həyatda mühüm hesab etdiyi anları çəkir.", "type": "profesyonel" },
+          { "text": "Çox da sevmir.", "type": "sosyal" }
+        ]
+      },
+      {
+        "question": "Hədiyyə seçdiyiniz insanın məişət və işdə səliqə-sahmanını necə xarakterizə edərdiniz?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+          { "text": "Həmişə nizam-intizamlıdır, hər şey öz yerində olur.", "type": "sevgi" },
+          { "text": "Nizamı qorumağa çalışır, amma məncə, bu, həmişə alınmır.", "type": "profesyonel" },
+          { "text": "Səliqə və nizamla heç bir əlaqəsi yoxdur.", "type": "sosyal" }
+        ]
+      },
+      {
+        "question": "Sizin sürpriz hazırladığınız insan iş həyatında nə qədər məşğuldur?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+          { "text": "Həmişə məşğuldur, sıx qrafiki var və işləri çoxdur.", "type": "sevgi" },
+          { "text": "Özünə kifayət qədər vaxt ayırır, amma işlərində də diqqətlidir və buna zaman sərf edir.", "type": "profesyonel" },
+          { "text": "Vaxtını, əsasən, sakit keçirir, nadir hallarda çox məşğul olur.s", "type": "sosyal" }
+        ]
+      }
+    ]
+}  
