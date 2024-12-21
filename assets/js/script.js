@@ -12,7 +12,99 @@ let scores = {
     əbədiyyət: 0
 };
 
-let questions = [];
+const questions = [
+    {
+        "question": "Hədiyyə alacağınız insan hansı istirahət növünə üstünlük verir?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+            { "text": "Aktiv istirahəti sevir. Səyahət, gəzinti, idman fəaliyyətləri onun həyat tərzidir.", "type": "səyahətçi" },
+            { "text": "Dostları və ailəsi ilə vaxt keçirməyə üstünlük verir, hətta hər gün yaxınları ilə ünsiyyət saxlamağa çalışır.", "type": "pozitiv" },
+            { "text": "Evdə oturan insandır. Kitab oxumaq və seriala baxmaq onun üçün ideal istirahətdir.", "type": "serial" }
+        ]
+    },
+    {
+        "question": " Hədiyyə vermək istədiyiniz insan dizayn və moda sahəsindəki son trendləri izləyir?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+            { "text": "Onun üçün stil və xarici görünüş çox önəmlidir, həmişə trendləri izləyir.", "type": "pozitiv" },
+            { "text": "Stil və dizayn onun üçün ən vacib aspekt deyil, trendləri ara-sıra izləyir.", "type": "teknoloji" },
+            { "text": "Dizayn onun üçün böyük əhəmiyyət daşımır, əsas odur ki, əşya rahat olsun.", "type": "stil" }
+        ]
+    },
+    {
+        "question": "Hədiyyə hazırladığınız insan neçə müddətdən bir səyahət edir?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+            { "text": "Tez-tez edir, o, həmişə yoldadır", "type": "pozitiv" },
+            { "text": "Bəzən, iş üçün və ya məzuniyyət zamanı.", "type": "profesyonel" },
+            { "text": "Nadir zamanlarda, əsasən, ehtiyac olduqda səyahət edir.", "type": "sosyal" }
+        ]
+    },
+    {
+        "question": "Hədiyyə seçdiyiniz insanı musiqisevər adlandırmaq olar? O, musiqi dinləməyi sevir?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+            { "text": "Şübhəsiz! O, daim musiqi dinləyir.", "type": "pozitiv" },
+            { "text": "Ara-sıra musiqi dinləyir.", "type": "profesyonel" },
+            { "text": "Maraqlı kitab oxumağa üstünlük verir.", "type": "sosyal" }
+        ]
+    },
+    {
+        "question": "Hədiyyə seçdiyiniz insan sağlamlığına nə qədər diqqət edir?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+            { "text": "Bu, onun üçün çox vacibdir, özünə diqqət edir və idmanla məşğul olur.", "type": "pozitiv" },
+            { "text": "Sağlamlığına diqqət yetirir, amma həmişə idman etmək üçün vaxt tapmır.", "type": "profesyonel" },
+            { "text": " Ən yaxşı idman - divandan qalxmadan baxacağın idmandır.", "type": "sosyal" }
+        ]
+    },
+    {
+        "question": "Hədiyyə seçdiyiniz insanı yaradıcı şəxs adlandırmaq olar?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+            { "text": "Bəli, o, sənətə maraq göstərir və sənətlə məşğul olur.", "type": "pozitiv" },
+            { "text": "Yaradıcı fəaliyyətləri sevir, amma buna vaxt tapa bilmir.", "type": "profesyonel" },
+            { "text": "Pizza yemək və mağazaları gəzməklə “incəsənəti” öyrənir.", "type": "sosyal" }
+        ]
+    },
+    {
+        "question": "Sizin fikrinizcə, hədiyyə seçdiyiniz insanı daha çox hansı hədiyyə sevindirər?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+            { "text": "Texnologiya ilə bağlı cihazlar və qurğular", "type": "pozitiv" },
+            { "text": "Ev üçün faydalı və praktik hədiyyələr", "type": "profesyonel" },
+            { "text": "Əhval-ruhiyyəni yüksəldən qeyri-adi və ya yaradıcı bir şey", "type": "sosyal" }
+        ]
+    },
+    {
+        "question": "Hədiyyə seçdiyiniz insan fotoşəkil və video çəkməyi sevir?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+            { "text": "Çəkir, montaj edir, paylaşır və yüzlərlə bəyənmə toplayır.", "type": "pozitiv" },
+            { "text": "Yalnız həyatda mühüm hesab etdiyi anları çəkir.", "type": "profesyonel" },
+            { "text": "Çox da sevmir.", "type": "sosyal" }
+        ]
+    },
+    {
+        "question": "Hədiyyə seçdiyiniz insanın məişət və işdə səliqə-sahmanını necə xarakterizə edərdiniz?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+            { "text": "Həmişə nizam-intizamlıdır, hər şey öz yerində olur.", "type": "pozitiv" },
+            { "text": "Nizamı qorumağa çalışır, amma məncə, bu, həmişə alınmır.", "type": "profesyonel" },
+            { "text": "Səliqə və nizamla heç bir əlaqəsi yoxdur.", "type": "sosyal" }
+        ]
+    },
+    {
+        "question": "Sizin sürpriz hazırladığınız insan iş həyatında nə qədər məşğuldur?",
+        "image": "./assets/img/Picture1.jpg",
+        "options": [
+            { "text": "Həmişə məşğuldur, sıx qrafiki var və işləri çoxdur.", "type": "pozitiv" },
+            { "text": "Özünə kifayət qədər vaxt ayırır, amma işlərində də diqqətlidir və buna zaman sərf edir.", "type": "profesyonel" },
+            { "text": "Vaxtını, əsasən, sakit keçirir, nadir hallarda çox məşğul olur.", "type": "sosyal" }
+        ]
+    }
+];
+
 
 document.getElementById('start-button').addEventListener('click', startQuiz);
 
@@ -65,7 +157,6 @@ function loadQuestion() {
         dots[currentQuestionIndex].classList.add('active');
         questionNumber.textContent = `${currentQuestionIndex + 1}/${questions.length}`;
 
-        // GSAP animasyonu: Yeni soru için soru kutusunu yavaşça göster
         gsap.fromTo(questionContainer, { opacity: 0 }, { opacity: 1, duration: 1 });
         gsap.fromTo(optionsContainer, { opacity: 0 }, { opacity: 1, duration: 1, delay: 0.3 });
         
@@ -81,22 +172,19 @@ function selectOption(type) {
 }
 
 function showResult() {
-    // Result ekranına geçerken animasyon
     gsap.to('#quiz-content', { opacity: 0, duration: 1, onComplete: () => {
         document.getElementById('quiz-content').classList.add('hidden');
         document.getElementById('progress').classList.add('hidden');
         document.getElementById('result').classList.remove('hidden');
 
-        // Sonuç ekranı için animasyonlar
         gsap.fromTo('#result', { opacity: 0 }, { opacity: 1, duration: 1 });
         gsap.fromTo('#result-title', { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 1 });
         gsap.fromTo('#result-description', { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 1 });
     }});
 
-    // Sorunun görselini gizle
     const questionImage = document.getElementById('question-image');
     if (questionImage) {
-        questionImage.classList.add('hidden');  // Sorunun görselini gizle
+        questionImage.classList.add('hidden'); 
     }
 
     const highestScoreType = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
@@ -145,14 +233,13 @@ function showResult() {
     };
 
     const resultText = resultTextMap[highestScoreType];
-    document.getElementById('result-title').textContent = resultText.title;  // Başlık
-    document.getElementById('result-description').textContent = resultText.description;  // Açıklama
+    document.getElementById('result-title').textContent = resultText.title;  
+    document.getElementById('result-description').textContent = resultText.description; 
 
     const resultImage = document.getElementById('result-image');
-    resultImage.src = `https://via.placeholder.com/150?text=Sonuç+Resmi+${highestScoreType}`;
+    resultImage.src = `./assets/img/${highestScoreType}.png`;
     document.getElementById('result-image-container').classList.remove('hidden');
 
-    // Önerilen Ürünler
     showRecommendedProducts(highestScoreType);
 }
 
@@ -161,7 +248,7 @@ function showResult() {
 function showRecommendedProducts(type) {
     const productContainer = document.getElementById('recommended-products');
     productContainer.classList.remove('hidden');
-    productContainer.innerHTML = '';  // Önceki ürünleri temizle
+    productContainer.innerHTML = ''; 
 
     const productSuggestions = {
         pozitiv : [
@@ -222,16 +309,10 @@ function showRecommendedProducts(type) {
         productItem.classList.add('recommended-item', 'green');
         productItem.textContent = item.text;
         productItem.href = item.link;
-        productItem.target = "_blank";  // Yeni sekmede açılması için target="_blank"
+        productItem.target = "_blank"; 
         productContainer.appendChild(productItem);
     });
 }
 
-// JSON Server'dan verileri al
-fetch('http://localhost:3000/questions')
-    .then(response => response.json())
-    .then(data => {
-        questions = data;
-        console.log('Questions loaded:', questions);
-    })
-    .catch(error => console.error('Error fetching questions:', error));
+
+

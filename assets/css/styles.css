@@ -8,6 +8,7 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1.24;
     color: #000;
     text-align: center;
+    margin-top: 10px;
 }
 p{
     color: #555;
@@ -47,6 +48,7 @@ body {
     max-width: 500px;
     text-align: center;
     animation: slideDown 1s ease-out;
+    position: relative;
 }
 
 .result-container {
@@ -103,7 +105,7 @@ button:hover {
 }
 
 .recommended-item.green:hover {
-    background-color: #45a049; /* Hover rengi */
+    background-color: #45a049;
 }
 
 #result-title {
@@ -123,7 +125,6 @@ button:hover {
     text-align: center;
 }
 
-/* Animasyonlar */
 @keyframes slideDown {
     from {
         transform: translateY(-100%);
@@ -176,8 +177,8 @@ button:hover {
 
 .recommended-item.green {
     display: block;
-    background-color: #4CAF50; /* Yeşil arka plan */
-    color: white; /* Beyaz metin */
+    background-color: #4CAF50;
+    color: white;
     padding: 15px;
     margin: 5px 0;
     border-radius: 5px;
@@ -188,7 +189,7 @@ button:hover {
 }
 
 .recommended-item.green:hover {
-    background-color: #45a049; /* Hover rengi */
+    background-color: #45a049;
 }
 
 #intro-image-container,#question-image,#result-image-container{
@@ -198,4 +199,10 @@ button:hover {
     max-width: 540px;
     width: 100%;
     height: 100%;
+    margin-top: 60px;
+}
+.question-number{
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
